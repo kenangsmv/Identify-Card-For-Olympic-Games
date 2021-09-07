@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+       
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.w100 {
+    width: 100%;
+}
+/* flex*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+.border-none{
+    border: none;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.column-flex-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column-flex-end {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.space-around {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.my-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.my-column {
+    display: flex;
+    flex-direction: column;
+}
+/*positions*/
+.my-relative {
+    position: relative;
+}
+/* margins*/
+.mtb-10{
+   margin: 10px 0;
+}
+ 
