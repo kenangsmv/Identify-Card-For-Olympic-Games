@@ -81,7 +81,7 @@ main{
 }
 
 .background-layer{
-    background-image: url("/img/layer_background_web.png");
+    background-image: url("/layer_background_web.png");
     height: 100vh;
     background-position: center;
     background-size: cover;
