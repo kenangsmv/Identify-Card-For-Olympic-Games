@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply-Forum</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/mybootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -27,12 +29,12 @@
                     </div>
                     <ul class="menu d-flex">
                         <li>
-                            <a href="#">
+                            <a href="apply-form.html">
                                 <button id="apply" type="button" class="btn btn-primary">Apply</button>
                             </a>
                         </li>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="#">Contact us</a>
@@ -48,54 +50,85 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6 mt-5">
-                        <form class="mt-5 row">
+                        <form class="mt-5 row submit-form">
                             <div class="mb-3 col-6">
                                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" id="name" name="important">
                                 
                               </div>
                               <div class="mb-3 col-6">
                                 <label for="exampleInputEmail1" class="form-label">Surname</label>
-                                <input type="text" class="form-control" id="surname" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" id="surname" name="important">
+                                
+                              </div>
+                              
+                              <div class="mb-3 col-6">
+                                <select class="form-select col-6" aria-label="Default select example" id ="country_select" name="important">
+                                    <option value="country" selected>Country</option>
+                                   
+                                  </select>
+                                
+                              </div>
+                              <div class="mb-3 col-6">
+                                <select class="form-select col-6" aria-label="Default select example" id="category_select" name="important">
+                                    <option selected value="category">Category</option>
+                                    <option value="swim">Swimming</option>
+                                    <option value="boxing">Boxing</option>
+                                    <option value="running">Running</option>
+                                    <option value="wrestling">Wrestling</option>
+                                    <option value="triat">Triathlon</option>
+                                   
+                                  </select>
                                 
                               </div>
                               <div class="mb-3 col-12">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="email" name="important">
                                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                               </div>
                               <div class="mb-3 col-6">
-                                <select class="form-select col-6" aria-label="Default select example">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
+                                  <div class="img-upload center my-column">
+                                   <div class="click-box my-relative center my-column">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Choose File</p>
+                                   </div>
+                                    <img id="img-box" src="" alt="profile" name="important">
+                                  </div>
+                                  <input type="file"  accept="image/*" id="card-image">
                                 
                               </div>
-                              <div class="mb-3 col-6">
-                                <select class="form-select col-6" aria-label="Default select example">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
-                                
-                              </div>
-                           
-                            
-                            
-                            
-        
-                            <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                    
+                            <button id="submit_btn" type="submit" class="btn btn-primary">Submit</button>
+
+
                           </form>
                     </div>
-                    <div class="col-6 mt-5">
-                        <div class="chest-card ms-auto"></div>
+                    <div class="col-6 mt-5 flex-end">
+                        <div class="chest-card center my-column">
+
+                              <div class="card_profile_img center">
+                               
+                              </div>
+                                
+                                <div class="user-info center my-column pt-3">
+                                  <span class="card_fullname"></span>
+
+                                  <div class="card_category">
+                                    <span class="identify">ATHLETE - </span>
+                                    <span class="sport_category"></span>
+                                    
+                                  </div>
+                                  <span class="id_number">
+                                  
+                                </span>
+                                <div class="card-flag pt-3">
+                                   
+                                </div>
+                                  
+                                </div>
+                               
+                             
+                        </div>
                     </div>
                 </div>
                 
